@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>h1 ile Merhaba HTML</h1>
+    <h2>h2 ile Merhaba HTML</h2>
+    <h3>h3 ile Merhaba HTML </h3>
+    <h4>h4 ile Merhaba HTML</h4>
+    <h5>h5 ile Merhaba HTML</h5>
+    <h6>h6 ile Merhaba HTML</h6>
+    <br>
+    br etiketi ile alt satira gecilir
+<p>p etiketi ile paragraf belirtilir</p>
+<p> &lt;!-- bu işaretle yorum satırı açılır --&gt; bu işaretlede kapanır sadece kod ekranında görülür</p>
+ <h1>Siradaki konu HYPERLINK</h1>
+<p>
+    a etiketi ile hyperlink olusturulur örnegin
+    <a href="https://www.youtube.com">youtube</a>
+    burada önce href yazilir sonra link verilir ve linkin ne oldugu yazilir mesela
+    href = "https://www.youtube.com" bu sekilde yazilir ve linkin ne oldugu yazilir mesela youtube yazilir   
+ </p>
+<p>eger link baska sekmede acilmak istenirse hreften sonra yazdigimiz linkin yanina target="_blank" yazilir</p>
+<p>örnegin</p>
+<a href="https://www.youtube.com" target="_blank">youtube</a>
+<p>eger imleci linkin bagli oldugu kelimeye getirip o linkli kelimenin üzerine gelindiginde 
+    o linkin nereye gittigini gorunmesini istersek kullanacagimiz komut title="linkin nereye gittigi" seklinde yazilir.                   
+</p>
+<p>ornegin 
+    <a href="https://www.youtube.com" title="Youtube">youtube</a> 
+</p>
+<p>burada yazdigimiz komut href="https://www.youtube.com"title="Youtube" dur.</p>
+ 
+<h1>Siradaki konu Resim ekleme / İmage</h1>
+<h3> BİLİNMESİ GEREKEN TERİMLER:</h3>
+<p>src : resmin kaynağını belirtir</p>
+<p>alt : resmin alternatif metnini belirtir</p>
+<p>width : resmin genişliğini belirtir</p>
+<p>height : resmin yüksekliğini belirtir</p>
+<p>title : imleci görselin üzerine getirildiğinde görünecek metni belirtir</p> 
+<p>resimin bir linke dönüşmesini istiyorsak a etiketini kullanırız ve a etiketinin açılış ile kapanış parametresinin arasına img etiketini koyarız </p>
+<h5>örnek</h5>  
+<a href="https://tr.wikipedia.org/wiki/Barış_Manço">
+    <img src="fotoğraflar/BARIŞ MANÇO.jpg" alt="BARIŞ MANÇO" width="300px" title="BARIŞ MANÇO">
+</a>
+<!-- burada resime erişmek için önce resim klasörü belirtip / koyup sonra resim dosyasının adını yazıyoruz -->
+
+ <h1>SIRADAKİ KONU: METİN BİÇİMLENDİRME:</h1>
+<h2>Göreceğimiz parametreler :</h2>
+<p> b : kalın harf</p>
+<p> i : italik harf</p>
+<p>big : büyük harf</p>
+<p>small : küçük harf</p>
+<p>sub : alt sembol</p>
+<p>sup : üst sembol</p>
+<p>ins : altı çizili</p>
+<p>del : üstü çizili</p>
+<p>mark : fosforlu</p>
+<h3>ÖRNEK:</h3>
+<b>kalın harf (b)</b><br>
+<i>italik harf (i)</i><br>
+<p>Bu <big>büyük harf (big)</big> yazısı</p><br>
+<p>Bu <small>küçük harf (small)</small></p><br>
+<p>Bu <sub>alt sembol (sub)</sub> yazısı</p><br>
+<p>Bu <sup>üst sembol (sup)</sup> yazısı</p><br>
+<ins>altı çizili (ins)</ins><br>
+<del>üstü çizili (del)</del><br>
+<mark>fosforlu (mark)</mark>
+<h1>SIRADAKİ KONU: LİSTELER</h1>
+<p>Listede istediğimiz elemanları kodlamada li etiketi içine yazarız</p>
+<h2>Göreceğimiz parametreler :</h2>
+<h3>1. Sırasız Liste (ul)</h3>
+<p>Başında sayı veya harf olmayan listelerdir. Ul etiketi içine yazarız</p>
+<p>Örnek:</p>
+<ul>
+    <li>domates</li>
+    <li>muz</li>
+    <li>elma</li>
+    <li>armut</li>
+</ul>
+<h3>2. Sıralı Liste (ol)</h3>
+<p>Başında sayı veya harf olan listelerdir. Ol etiketi içine yazarız. Harfmi yoksa sayımı olacağına karar vermek için type="a" veya type="1" yazılır</p>
+<p>Örnek:</p>
+<ol type="1">
+    <li>tavayı hazırla</li>
+    <li>tavaya yağ dök ve ocağa koy</li>
+    <li>tavaya yumurtayı kır</li>
+    <li>yumurtayı pişene kadar karıştır</li>
+</ol>
+<ol type="a">
+    <li>tavayı hazırla</li>
+    <li>tavaya yağ dök ve ocağa koy</li>
+    <li>tavaya yumurtayı kır</li>
+    <li>yumurtayı pişene kadar karıştır</li>
+</ol>
+<h3>3. Açıklama Listesi (dl)</h3>
+<p>Açıklama listeleri, terimler ve tanımlar için kullanılır. Dl etiketi içine yazarız.
+    Dl etiketi içine de 2 ayrı terim yazılır bunlar dt ve dd dir. dt açıklamak istediğimiz terimi dd ye de açıklamasını yazarız</p>
+<p>Örnek:</p>
+<dl>
+    <dt>Açıklanacak terim</dt>
+    <dd>Açıklaması</dd><br>
+    <dt>Epistemoloji</dt>
+    <dd>İnsanın bilgiyi nasıl elde ettiğini,neyin bilgi sayıldığını ve bir şeyin doğru
+        olduğunu nasıl kanıtlayaabileceğimizi inceleyen felsefe dalıdır.
+    </dd>
+</dl><br>
+<h1>SIRADAKİ KONU: TABLOLAR</h1>
+<h3>Göreceğimiz parametreler :</h3>
+<ul>
+    <li>table : tablo oluşturur</li>
+    <li>tr : tablo satırı oluşturur</li>
+    <li>td : tablo hücresi oluşturur</li>
+    <li>th : tablo başlık hücresi oluşturur</li>
+    <li>align : tablo hücresi hizalar</li>
+    <li>bgcolor : tablo satırı arka plan rengi belirler</li>
+    <p>bgcolor : tr etiketine kullanıldığında tablo satırının arka plan rengini belirler.
+        table etiketine kullanıldığında tablonun kenarlarının rengini belirler.
+    </p>
+</ul>
+<h3>Örnek:</h3>
+<table bgcolor = "black">
+    <tr bgcolor = "grey"> 
+        <th>pazartesi</th>
+        <th>salı</th>
+        <th>çarşamba</th>
+        <th>perşembe</th>
+        <th>cuma</th>
+        <th>cumartesi</th>
+        <th>pazar</th>
+    </tr>
+    <tr align = "center"
+    bgcolor = "lightgrey">
+        <td>veri tabanı</td>
+        <td>web tasarımı</td>
+        <td>grafik animasyon</td>
+        <td>programlama</td>
+        <td>yok</td>
+        <td>tatil</td>
+        <td>tatil</td>
+</table>
+<h2> tablo genişliğini ayarlama için "width" parametresini kullanırız:</h2>
+<table bgcolor = "black" width = "560">
+    <tr bgcolor = "grey"> 
+        <th width="80">pazartesi</th>
+        <th width="80">salı</th>
+        <th width="80">çarşamba</th>
+        <th width="80">perşembe</th>
+        <th width="80">cuma</th>
+        <th width="80">cumartesi</th>
+        <th width="80">pazar</th>
+    </tr>
+    <tr align = "center"
+    bgcolor = "lightgrey">
+        <td>veri tabanı</td>
+        <td>web tasarımı</td>
+        <td>grafik animasyon</td>
+        <td>programlama</td>
+        <td>yok</td>
+        <td>tatil</td>
+        <td>tatil</td>
+        
+</table>
+<p>width parametresini kullanırken değerleri piksel cinsinden belirtiriz ve table etiketine uygularken her bir satıra yazdığımız değerlerin toplamını yazarız.
+            Örneğin table etiketine width = "560" yazdık ve her bir satırın genişliğini 80 piksel olarak belirledik ve 80*7=560 piksel oldu.
+        </p>
+</body>
+</html>
